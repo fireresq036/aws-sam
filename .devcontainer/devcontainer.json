@@ -1,0 +1,42 @@
+{
+    "features": {
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.13"
+        }    
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "amazonwebservices.amazon-q-vscode",
+                "yzhang.markdown-all-in-one",
+                "ms-python.black-formatter",
+                "hashicorp.terraform",
+                "ms-azuretools.vscode-azureterraform",
+                "golang.go",
+                "github.vscode-github-actions",
+                "timonwong.shellcheck",
+                "robertz.code-snapshot",
+                "ms-python.python",
+                "GitHub.copilot"
+            ],
+            "settings": {
+                "[python]": {
+                    "editor.tabSize": 4,
+                    "editor.formatOnSave": true
+                },
+                "python.testing.pytestArgs": [
+                    "."
+                ],
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
+                "python.formatting.provider": "ms-python.black-formatter",
+                "python.linting.mypyEnabled": true,
+                "python.linting.enabled": true,
+                "editor.tabSize": 2
+            }
+        }
+    }
+}
